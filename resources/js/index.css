@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+.popular {
+    background: url(./assets/img/ribbon_popular.png) no-repeat;
+	z-index: 3;
+	position: absolute;
+	top: 0.45em;
+    left: 0.45em;
+	width: 90px;
+    height: 90px;
+}
+
+.popular_bis {
+    background: url(./assets/img/ribbon_popular.png) no-repeat;
+	z-index: 3;
+	position: absolute;
+	top:0.95em;
+    left: 3.5em;
+	width: 90px;
+    height: 90px;
+}
+
+@media (min-width: 640px) {
+	.popular_2 {
+		z-index: 999999;
+		/* left: auto; */
+		top: 0.75em;
+		position: absolute;
+		margin-left: -0.25em;
+	}
+}
+
+@media (max-width: 639px) {
+	.popular_2 {
+		z-index: 999999;
+		/* left: auto; */
+		position: absolute;
+		margin-top: -0.25em;
+		margin-left: -0.25rem;
+	}
+}

@@ -1,0 +1,121 @@
+/* Button X menu mobile */
+.cross:first-child{
+    margin-left: auto;
+}
+
+/* Menu profil desktop */
+.menu-desktop{
+    position: absolute;
+    top: 60px;
+    right: 1%;
+    display: block;
+    padding: 10px;
+    background-color: rgb(232, 232, 232);
+    border-radius: 20px;
+    /* border: 1px solid black; */
+}
+
+/* Ligne de separation entre li */
+.menu-desktop li{
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+.menu-desktop li:last-child{
+    border-bottom: none;
+}
+
+
+/* Compteurs */
+#compteurs div{
+    border-right: 1px dashed white;
+}
+#compteurs div:last-child{
+    border-right: none;
+}
+
+/* Progress bar */
+.steps{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin: 5% 0;
+}
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    color: #ff7f00;
+    border: 2px solid #ff7f00;
+    z-index: 1;
+}
+.progress-bar{
+    position: absolute;
+    height: 4px;
+    width: 70%;
+    background: #e0e0e0;
+}
+.indicator{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background: #ff7f00;
+}
+
+.test-index{
+    z-index: 1;
+}
+
+.test-bg{
+    background-image: url(../assets/img/svg_time/time_panel.svg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* <<<<<<<<<<<<TextImage>>>>>>>>>>>>> */
+
+/* General */
+.no-full-image, .full-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* With padding */
+.no-full-image article{
+    text-align: center;
+    padding: 6%;
+}
+.no-full-image picture{
+    display: block;
+    /* Flex */
+    display: flex;
+}
+
+/* No Padding */
+.full-image article{
+    background-color: #ff7f00;
+    height: 100%;
+    color: white;
+    text-align: center;
+    padding: 3%;
+    
+    /* Flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.full-image img{
+    width: 100%;
+    object-fit: cover;
+}
